@@ -6,20 +6,57 @@
 
 text = "Python is an amazing programming language. It is versatile, easy to learn, and powerful."
 
+# Lenght Calculation
 calculate_lenght = len(text)
-
 print(calculate_lenght)
 
+# Uppercase and Lowercase Conversion
 uppercase = text.upper()
 lowercase = text.lower()
 print(uppercase)
 print(lowercase)
 
+# Word Count
 word_count = text.count("is")
 print(word_count)
 
+# Substring Extraction
 subtring_extract = text[0:42]
 print(subtring_extract)
+
+# Word Replacement
+original = "Python, Armadillo, Raven, Manta Ray, Giraffe, Triceratops"
+print(original)
+target_word = input("Choose an animal from the choices above: ")
+replacement_word = input("please enter a second animal from the choices above: ")
+new_sentence = original.replace(str(target_word), str(replacement_word))
+print(new_sentence)
+
+# Whitespace Removal
+text_with_whitespace = "     Python is an amazing programming language. It is versatile, easy to learn, and powerful.     "
+print(text_with_whitespace.strip())
+
+# Splitting Into Sentences
+text2 = "Python is an amazing programming language. It is versatile, easy to learn, and powerful"
+split_text = text2.split('.')
+print(split_text)
+
+# Word Reversal
+text = "Python is an amazing programming language. It is versatile, easy to learn, and powerful."
+reversal = (text[::-1])
+text_split = (reversal.split())
+second_reversal = text_split[::-1]
+print(' '.join(second_reversal))
+
+#Character Count
+text = "Python is an amazing programming language. It is versatile, easy to learn, and powerful."
+character = input("Please enter a character: ")
+print(text.count(character))
+
+# Substring Count
+text = "Python is an amazing programming language. It is versatile, easy to learn, and powerful."
+print(text.count("is"))
+
 
 
 
