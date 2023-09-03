@@ -57,6 +57,49 @@ print(text.count(character))
 text = "Python is an amazing programming language. It is versatile, easy to learn, and powerful."
 print(text.count("is"))
 
+# List Creation
+text = "Python is an amazing programming language. It is versatile, easy to learn, and powerful."
+word_list = text.split(' ')
+print(word_list)
+
+# Appending
+word_list.append("Pythonic")
+print(word_list)
+
+#Insertion
+word_list[0:0] = ["awesome"]
+print(word_list)
+
+# Indexing and Slicing
+print(word_list[2])
+sublist = word_list[5:9]
+print(sublist)
+
+# Removal
+word_list.remove("amazing")
+print(word_list)
+
+# Sorting
+text = "Python is an amazing programming language. It is versatile, easy to learn, and powerful. Pythonic"
+lowercase_text = text.lower()
+word_list =lowercase_text.split(' ')
+word_list.sort()
+word_list.remove("amazing")
+print(word_list)
+
+# Counting
+print(word_list.count("is"))
+
+# Joining
+print(' '.join(word_list))
+
+# Reversal
+print(word_list[::-1])
+
+# Copying
+copied_list = word_list
+print(copied_list)
+
 
 
 
